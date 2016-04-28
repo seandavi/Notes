@@ -1,4 +1,3 @@
 * Machine Learning
 ** Links of interest
-- http://www.deeplearningbook.org :: A full online book on deep learning with 
-background material
+- http://www.deeplearningbook.org :: A full online book on deep learning with background material
