@@ -1,3 +1,21 @@
 * Machine Learning
 ** Links of interest
 - http://www.deeplearningbook.org :: A full online book on deep learning with background material
+
+*** Notes from http://www.deeplearningbook.org
+**** Chapter 6
+Feedforward neural networks are also called multilayer perceptrons and are 
+the basis of neural networks. There is no "feedback" in these models. The goal
+of FFNN is to map $y \approx f(x; \theta)$. Then, the job of the FFNN training 
+is to learn $\theta$.
+
+In order to map x to the input layer, we can define a function $\phi$ that 
+provides a **new** set of features that represent x. The question is, then,
+how to choose $\phi$. Doing this by hand, with lots of human intervention
+based on expert knowledge and understanding of the systems involved, used
+to be the dominant approach. *The novelty of Deep Learning is to learn $\phi$. 
+The strategy of deep learning is to learn \phi. In this approach, we have 
+a model $y = f(x;θ, w) = \phi(x; \theta)^{T}w. We now have parameters
+\theta that we use to learn \phi from a broad class of functions, 
+and parameters w that map from $\phi(x)$ to the desired output. This 
+is an example of a deep feedforward network, with \phi deﬁning a hidden layer. 
