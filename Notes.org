@@ -2,6 +2,8 @@
 
 
 ** Links of interest
+
+- Great online tutorials here http://ufldl.stanford.edu/tutorial/
 - http://www.deeplearningbook.org :: A full online book on deep learning with background material
 - GPU accelerated machine learning: http://www.nvidia.com/object/machine-learning.html
 - Caffe: http://caffe.berkeleyvision.org/
