@@ -1,0 +1,3 @@
+* Servers
+
+- jupyter: pamuk, tunneled 8888 -> 18888
