@@ -1,4 +1,5 @@
-* Machine Learning					    :MachineLearning:
+#+STARTUP: logdone
+* Machine Learning 					    :MachineLearning:
 
 
 ** Links of interest
@@ -42,3 +43,27 @@ is an example of a deep feedforward network, with \phi deﬁning a hidden layer.
 
 - M-x xterm-mouse-mode to allow mouse clicking to control things
 - 
+
+* Meeting notes
+
+** DONE Meeting with Anastasia in Warren's office
+   SCHEDULED: <2016-05-12 Thu 10:00-10:45>
+
+- Warren brings up clinical trials searching
+  - Need structured eligibility data
+  - Need structured data in general 
+  - Incorporate controlled vocabularies into clinical trials
+
+- Carl's branch
+  - A business app side of things
+  - A vision/strategy side
+
+- Jeff's branch
+We own two things:
+  - Network
+  - Security
+Everything else is shared.
+
+*** DONE Email Anastasia an introduction
+    SCHEDULED: <2016-05-20 Fri>
+

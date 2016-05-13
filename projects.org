@@ -1,0 +1,36 @@
+#+STARTUP: logdone
+* Ongoing Projects
+
+** Myriem20160513
+   :PROPERTIES:
+   :Project:   Myriem20160513
+   :PI:        Kebebew
+   :Requested: 2016-05-10
+   :END:
+Myriem Boufraqech mailto:myriem.boufraqech@nih.gov asked to look at three sets
+of variant calls representing:
+- Tumor
+- Tumor-derived Cell Line
+- Blood
+
+She is interested in whether the cell line represents tumor and wants to
+use the prepared calls (available as single excel files per sample, Ion 
+Torrent) to prove that the tumor and cell line are the same. I talked with
+her about the likelihood that we would not be able to determine that
+relationship from the limited data.
+
+*** DONE Myriem's analysis [100%]
+    CLOSED: [2016-05-13 Fri 11:02] SCHEDULED: <2016-05-13 Fri>
+  - [X] Calculate overlap among variant calls
+  - [X] Generate Venn diagram
+
+*** TODO deliver results to Myriem
+    SCHEDULED: <2016-05-13 Fri>
+
+
+
+* Old Projects
+** ShinySRAdb
+*** TODO Clean up app a bit
+*** TODO Consider publishing on F1000R or at least bioRxiv
+
