@@ -65,5 +65,5 @@ We own two things:
 Everything else is shared.
 
 *** DONE Email Anastasia an introduction
-    SCHEDULED: <2016-05-20 Fri>
+    CLOSED: [2016-05-13 Fri 11:08] SCHEDULED: <2016-05-20 Fri>
 
