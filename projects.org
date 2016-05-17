@@ -1,5 +1,14 @@
 #+STARTUP: logdone
-* Ongoing Projects
+* IT projects
+
+* Admin projects
+** Genomic Data Sharing project
+*** Meeting about GDS tracking site
+    SCHEDULED: <2016-05-16 Mon 13:00-14:00>
+
+
+
+* Science projects
 
 ** Myriem20160513
    :PROPERTIES:
@@ -24,8 +33,15 @@ relationship from the limited data.
   - [X] Calculate overlap among variant calls
   - [X] Generate Venn diagram
 
-*** TODO deliver results to Myriem
-    SCHEDULED: <2016-05-13 Fri>
+*** DONE deliver results to Myriem
+    CLOSED: [2016-05-13 Fri 06:39] SCHEDULED: <2016-05-13 Fri>
+
+*** TODO Need more details for Myriem
+    SCHEDULED: <2016-05-17 Tue>
+Myriem is looking for more details in the analysis. In particular, I think
+she wants a list of variants that are shared by the tumor and cell line but
+not in the blood.
+
 
 
 

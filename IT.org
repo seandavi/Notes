@@ -1,3 +1,85 @@
 * Servers
 
 - jupyter: pamuk, tunneled 8888 -> 18888
+
+* Notes
+
+** redmine.usecompute.net
+  - To run the ldap tunnel in daemon mode
+    - daemon -r /home/bitnami/tunnel.sh
+
+
+* Cleversafe
+
+** Training meeting
+<2016-05-17 Tue>-<2016-05-18 Wed>
+
+*** Storage system
+
+**** Erasure coding
+   - https://en.wikipedia.org/wiki/Erasure_code
+   - Described as three numbers
+     - Width = number of final "slices" of each object
+       - Width cannot be larger than the number of slicestores
+       - Width must be a factor of the number of slicestores
+       - Width determined by:
+           - capacity
+           - reliability
+           - number of sites
+           - Performance
+           - overhead
+   - Read Threshold
+     - Defines the number of slices that must be read to get the object back 
+   - Write threshold (only thing that can be changed after vault created)
+     - Defines the number of slices that must be written to be a successfully written object.  This number will be between the read threshold and the width
+     - Closer to width leads to better instantaneous reliability
+     - Closer to read threshold leads to higher write availability
+
+**** http load balancing
+   - Need to do *redirects* and NOT proxies
+   - client app must support 307 redirect (307 should follow a redirect on PUT, whereas 302 should not)
+
+
+*** Manager
+   - Manager has a robust API
+     - These can be used for pulling information for uptime, etc., by client applications
+
+*** API
+
+**** Configuration
+   - When configuring the accessors, need to configure the pool with a specific [[API type]].  That means that the accessors will serve only one flavor of API.
+     - Cloud Storage Object API = s3 API
+     - Simple Object Storage API = OLD cleversafe API (not recommended)
+     - Openstack Object Storage = SWIFT API (not feature-complete)
+   - CAN configure multiple accessors, eg., one set of accessors that speak s3 and one set that speak Swift
+
+
+*** Authentication
+  - key concept--"users" do not interact directly with the system.  Instead, think of the "users" interacting with a client that then interacts with the system.
+  
+*** Creating and deploying Vaults
+   - By default S3 authenticaiton is not enabled
+   - Recommended to use root certificate for a client to make connection to Cleversafe Secure API
+   - User can have multiple access keys
+   - / (forward slash) is a valid char in a file name to emulate folder structure with S3 browsing tools. There is no folder structure in Cleversafe vault
+   - Manager API would let you delete non-empty vault, not from provisioning API
+   
+*** Client software and libraries
+   - http://aws.amazon.com/code/Amazon-S3?browse=1
+   - http://s3browser.com/
+   - https://cyberduck.io/
+   - http://www.expandrive.com/
+   - https://github.com/s3fs-fuse/s3fs-fuse
+   - LibCloud or Boto3 (you want to use the newer version if you can) for Python
+   - JClouds for Java (https://jclouds.apache.org/)
+   - https://github.com/cloudyr/aws.s3
+   
+*** Random notes
+   - GPFS will include tiering (automatic and manual) to object storage
+
+
+*** TASKS
+**** TODO Create redirecting load balancer
+**** TODO Look at configuration options
+**** TODO Create ServiceNow ticket category for Cleversafe support
+**** TODO Document clients that are s3 capable
