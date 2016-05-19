@@ -11,7 +11,10 @@
 
 * Cleversafe
 
-** Training meeting
+** Cleversage training
+:PROPERTIES:
+:LOCATION: Room 1106, ATRF, Frederick
+:END:
 <2016-05-17 Tue>-<2016-05-18 Wed>
 
 *** Storage system
@@ -79,7 +82,25 @@
 
 
 *** TASKS
-**** TODO Create redirecting load balancer
-**** TODO Look at configuration options
+**** TODO Create redirecting load balancer for cleversafe NCI server
+
+**** TODO Look at configuration options for NCI cleversafe
+
 **** TODO Create ServiceNow ticket category for Cleversafe support
-**** TODO Document clients that are s3 capable
+
+**** DONE Document clients that are s3 capable
+     DEADLINE: <2016-05-19 Thu>
+Done in our "notes" for the training.  Shared notes to google group.
+
+**** DONE Create google group or email list for object storage at NIH
+     DEADLINE: <2016-05-20 Fri>
+https://groups.google.com/forum/#!forum/objectstorageatnih
+mailto:objectstorageatnih@googlegroups.com
+
+**** DONE Get access to Cleversafe documentation
+     DEADLINE: <2016-05-19 Thu>
+Set this up as a google drive folder and put all documentation in there.  Shared to google group.
+
+**** Send email to mailto:objectstorageatnih@googlegroups.com about physical setup
+     DEADLINE: <2016-05-27 Fri>
+

@@ -33,7 +33,6 @@ and parameters w that map from $\phi(x)$ to the desired output. This
 is an example of a deep feedforward network, with \phi deﬁning a hidden layer. 
 
 **** TODO Chapter 7 [33%]
-     SCHEDULED: <2016-05-03 Tue>
   - [X] stuff
   - [ ] stuff2
   - [ ] Stuff3
@@ -64,6 +63,55 @@ We own two things:
   - Security
 Everything else is shared.
 
-*** DONE Email Anastasia an introduction
-    CLOSED: [2016-05-16 Mon 18:43] SCHEDULED: <2016-05-20 Fri>
+** Meeting with Anastasia
+<2016-05-18 Wed 14:00-15:00>
+*** TODO Introduce Anastasia to Phil Bourne
+    DEADLINE: <2016-05-20 Fri>
+*** TODO Introduce Anastasis to Andrea Norris
+    DEADLINE: <2016-05-20 Fri>
+*** TODO Send Anastasia Informatics Documents
+    DEADLINE: <2016-05-20 Fri>
 
+*** TODO Set up regular meeting with Anastasia
+*** TODO Invite Anastasia to Data Science Lunch
+Mainly discussed NIH/NCI organizational structure
+
+
+
+* Meetings and Travel
+
+** TODO UPenn/CHOP inaugural Mid-Atlantic Bioinformatics Conference 
+<2016-10-26 Wed>
+
+*** TODO Travel for UPenn/CHOP meeting [0%]
+    DEADLINE: <2016-05-20 Fri>
+- [ ] get formal invitation
+- [ ] schedule travel with Nancy
+
+#+BEGIN_QUOTE
+Dear Dr. Davis:
+
+We would like to invite you to be a speaker at the UPenn/CHOP inaugural Mid-Atlantic Bioinformatics Conference on October 26, 2016, to be held on the research campus of the Children’s Hospital of Philadelphia, adjacent to the University of Pennsylvania.
+
+The topic of the conference is Computational Challenges for Precision Medicine. 
+
+We have some great speakers who have already accepted: Scott Zeger from JHU, Josh Stuart from UCSC, Paul  Boutros from OICR, Dana Crawford from Case Western, Jeff Hammerbacher from Mt. Sinai, and from UPenn/CHOP are Kai Tan, Sharon Diskin and Robert Faryabi.
+
+The committee who selected you as an invited speaker include the following UPenn and CHOP faculty:
+
+Hongzhe Li 
+Yoseph Barash
+Li-San Wang
+Kai Tan
+Sharon Diskin
+Blanca Himes
+Deanne Taylor
+Mingyao Li
+Robert Faryabi
+
+We will pay for travel, hotel, meals,  and offer an honorarium of $500. You are also invited to a dinner to be held the night previous (10/25) for all our speakers to meet one another.  Also, if there are additional faculty or people you’d like to visit at the University of Pennsylvania or at CHOP the day before on 10/25 we would be happy to set up meetings for you that day.
+
+Thank you!
+
+Deanne
+#+END_QUOTE

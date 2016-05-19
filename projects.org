@@ -1,10 +1,11 @@
+#+COLUMNS: %25ITEM(Task) %5TODO(To-do) %1PRIORITY %10TAGS %PI %Project
 #+STARTUP: logdone
 * IT projects
 
 * Admin projects
 ** Genomic Data Sharing project
 *** Meeting about GDS tracking site
-    SCHEDULED: <2016-05-16 Mon 13:00-14:00>
+<2016-05-16 Mon 13:00-14:00>
 
 
 
@@ -36,16 +37,36 @@ relationship from the limited data.
 *** DONE deliver results to Myriem
     CLOSED: [2016-05-13 Fri 06:39] SCHEDULED: <2016-05-13 Fri>
 
-*** TODO Need more details for Myriem
-    SCHEDULED: <2016-05-17 Tue>
+*** DONE Need more details for Myriem
+    CLOSED: [2016-05-17 Tue 18:21] DEADLINE: <2016-05-17 Tue>
 Myriem is looking for more details in the analysis. In particular, I think
 she wants a list of variants that are shared by the tumor and cell line but
 not in the blood.
 
 
 
+** TARGET Osteosarcoma
+   :PROPERTIES:
+   :Project:   TARGET Osteo
+   :PI:        Meltzer
+   :Requested: 2013-01-01
+   :END:
 
-* Old Projects
+*** Meetings
+**** TARGET Osteosarcoma Conference call
+     <2016-05-19 Thu 14:00-15:00>
+Discussion is with St. Jude about bad samples.  
+- 25 "bad" samples
+  - Mixture of bad libraries and sample mismatch.
+- Pipeline that St. Jude is using
+  - Structural variation
+    - CREST
+  - Small somatic variants
+    - "internal pipeline"--St. Jude not willing to share at this time, despite lots of asking
+  - LOH
+    - 10x coverage in dbSNP
+
+* Old Projects							    :ARCHIVE:
 ** ShinySRAdb
 *** TODO Clean up app a bit
 *** TODO Consider publishing on F1000R or at least bioRxiv
