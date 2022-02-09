@@ -8,3 +8,5 @@ This is to set up workload identity for a kubernetes cluster. See https://cloud.
 4. Inside the container, try running `bq ls`, `gsutil ls`
 
 
+## Identity sameness
+![](https://cloud.google.com/kubernetes-engine/images/workload-identity-sameness.svg)
