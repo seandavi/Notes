@@ -1,1 +1,1 @@
-See [workload-identity.sh file](workload_identity.sh) for details.
+See [workload-identity.sh file](workload-identity.sh) for details.
