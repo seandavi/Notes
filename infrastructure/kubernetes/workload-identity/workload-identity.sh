@@ -25,9 +25,11 @@ gcloud iam service-accounts create kubernetes-cluster-account \
 gcloud projects add-iam-policy-binding omicidx-338300 \
     --member "serviceAccount:kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com" \
     --role "roles/storage.admin"
+
 gcloud projects add-iam-policy-binding omicidx-338300 \
     --member "serviceAccount:kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com" \
     --role "roles/bigquery.admin" 
+
 gcloud projects add-iam-policy-binding omicidx-338300 \
     --member "serviceAccount:kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com" \
     --role "roles/pubsub.admin"
@@ -39,3 +41,12 @@ gcloud iam service-accounts add-iam-policy-binding kubernetes-cluster-account@om
 kubectl annotate serviceaccount gcp-workload-identity \
     --namespace default \
     iam.gke.io/gcp-service-account=kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com
+
+# On a running cluster, you'll need to update the metadata for running nodes
+# New nodes will have this change already in place
+gcloud container node-pools list --cluster=cluster-1 --zone us-central1-c
+
+gcloud container node-pools update default-pool --cluster=cluster-1 \
+    --zone us-central1-c --workload-metadata-from-node=GKE_METADATA
+
+gcloud container node-pools describe default-pool --cluster=cluster-1 --zone us-central1-c
