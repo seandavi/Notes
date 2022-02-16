@@ -38,7 +38,7 @@ gcloud iam service-accounts add-iam-policy-binding kubernetes-cluster-account@om
     --role roles/iam.workloadIdentityUser \
     --member "serviceAccount:omicidx-338300.svc.id.goog[default/default]"
 
-kubectl annotate serviceaccount gcp-workload-identity \
+kubectl annotate serviceaccount default \
     --namespace default \
     iam.gke.io/default=kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com
 
