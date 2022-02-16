@@ -36,11 +36,11 @@ gcloud projects add-iam-policy-binding omicidx-338300 \
 
 gcloud iam service-accounts add-iam-policy-binding kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com \
     --role roles/iam.workloadIdentityUser \
-    --member "serviceAccount:omicidx-338300.svc.id.goog[default/gcp-workload-identity]"
+    --member "serviceAccount:omicidx-338300.svc.id.goog[default/default]"
 
 kubectl annotate serviceaccount gcp-workload-identity \
     --namespace default \
-    iam.gke.io/gcp-service-account=kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com
+    iam.gke.io/default=kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com
 
 # On a running cluster, you'll need to update the metadata for running nodes
 # New nodes will have this change already in place
