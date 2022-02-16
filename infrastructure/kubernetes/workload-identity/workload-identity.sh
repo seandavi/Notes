@@ -27,7 +27,7 @@ gcloud projects add-iam-policy-binding omicidx-338300 \
     --role "roles/storage.admin"
 gcloud projects add-iam-policy-binding omicidx-338300 \
     --member "serviceAccount:kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com" \
-    --role "roles/bigquery.admin" \
+    --role "roles/bigquery.admin" 
 gcloud projects add-iam-policy-binding omicidx-338300 \
     --member "serviceAccount:kubernetes-cluster-account@omicidx-338300.iam.gserviceaccount.com" \
     --role "roles/pubsub.admin"
